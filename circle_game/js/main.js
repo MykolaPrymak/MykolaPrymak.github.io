@@ -1,1 +1,1 @@
-var PARTICLE_COUNT=30,PARTICLE_RADIUS_MIN=5,PARTICLE_RADIUS_MAX=40,DOUBLE_PI=2*Math.PI,REFRESH_INNTERVAL=20,exp=Math.exp,floor=Math.floor,min=Math.min;define(["vendor/underscore.min","app"],function(b,a){app=new a;document.getElementById("score").innerHTML="Loaded!!!"});
+var PARTICLE_COUNT=30,PARTICLE_RADIUS_MIN=5,PARTICLE_RADIUS_MAX=40,DOUBLE_PI=2*Math.PI,REFRESH_INNTERVAL=20,exp=Math.exp,floor=Math.floor,min=Math.min;define(["vendor/underscore.min","app"],function(b,a){app=new a});
