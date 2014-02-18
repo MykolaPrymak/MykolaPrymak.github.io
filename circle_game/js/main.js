@@ -1,1 +1,27 @@
-var PARTICLE_COUNT=30,PARTICLE_RADIUS_MIN=5,PARTICLE_RADIUS_MAX=40,DOUBLE_PI=2*Math.PI,REFRESH_INNTERVAL=20,exp=Math.exp,floor=Math.floor,min=Math.min;define(["vendor/underscore.min","app"],function(b,a){app=new a});
+/*
+var exp = Math.exp;
+var floor = Math.floor;
+var min = Math.min;
+var random = Math.random;
+*/
+requirejs.config({
+  shim: {
+    'class' : {
+      deps: [],
+      exports: 'Class'
+    },
+    'underscore': {
+      exports: '_'
+    }
+  },
+  paths: {
+    jquery : ['//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min', 'js/vendor/jquery-1.9.1.min.js'],
+    underscore: 'vendor/underscore.min',
+    'class': 'vendor/class',
+  }
+});
+define(['app'], function(App) {
+//  window.addEventListener('load', function() {
+      app = new App();
+//  }, false);
+});

@@ -1,2 +1,56 @@
-define(["vendor/class"],function(){return SpriteManager=Class.extend({init:function(a){var d=this,e=[];this.sprites=[];this.basePath="res/sprites/";(function(){console.info("Loading sprites files...");var c=e.length;_.each(e,function(b){d.load(b,function(){c--;c||(a&&a(),console.info("Sprites loading complete"))})})})()},load:function(a,d){var e=this.basePath+a,c=a.split(".").slice(0,-1).join("."),b=document.createElement("img"),f=this;b.addEventListener("load",function(){console.info(a,"is ready to draw.");
-d&&d()},!1);b.addEventListener("error",function(){console.error("Error: "+a+" could not be loaded.");f.sprites[c]=null},!1);b.src=e;this.sprites[c]=b},getSprite:function(a){return!this.sprites[a]?null:this.sprites[a]}})});
+define(['underscore', 'class'], function(_, Class) {
+  var SpriteManager = Class.extend({
+        init: function(cb) {
+            var self = this;
+            var spriteNames = [];
+            
+            this.sprites = [];
+            this.basePath = 'res/sprites/';
+            
+            function loadSpritesFiles() {
+                console.info('Loading sprites files...');
+                var count = spriteNames.length;
+                _.each(spriteNames, function(name) {
+                    self.load(name, function(){
+                        count--;
+                        if (!count) {
+                            if (cb) {
+                                cb();
+                            }
+                            console.info('Sprites loading complete');
+                        }
+                    })
+                });
+            };
+            loadSpritesFiles();
+        },
+        load: function(name, cb) {
+            var
+                path = this.basePath + name,
+                shortName = name.split('.').slice(0, -1).join('.'),
+                img = document.createElement('img'),
+                self = this;
+            img.addEventListener('load', function() {
+                console.info(name, 'is ready to draw.');
+                if(cb) {
+                    cb();
+                }
+            }, false);
+            img.addEventListener('error', function() {
+                console.error('Error: ' + name + ' could not be loaded.');
+                self.sprites[shortName] = null;
+            }, false);
+
+            img.src = path;
+            this.sprites[shortName] = img;
+        },
+        getSprite: function(name) {
+            if (!this.sprites[name]) {
+                return null;
+            }
+            return this.sprites[name];
+        }
+    });
+
+    return SpriteManager;
+});
