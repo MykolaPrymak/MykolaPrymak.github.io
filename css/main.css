@@ -1,0 +1,22 @@
+/* For fixed bottom navbar */
+html, body {
+    height: 100%;
+}
+body {
+    padding-bottom: 50px;
+}
+#wrap {
+    height: auto !important;
+    padding-bottom: 20px;
+    min-height: 100%;
+}
+footer {
+
+}
+footer .navbar {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+footer p {
+    margin: 10px 0;
+}
