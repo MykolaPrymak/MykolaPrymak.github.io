@@ -19,7 +19,6 @@ textarea {
 }
 
 body {
-    font-size: 1em;
     line-height: 1.4;
 }
 
@@ -160,6 +159,10 @@ footer p {
     display: none;
 }
 
+#helpAlert {
+    z-index: 1;
+    position: relative;
+}
 .nav-map {
     width: 100%;
     position: fixed;

@@ -13,8 +13,8 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -47,6 +47,11 @@
             </nav>
 
             <div id="content" class="container">
+               <div class="alert alert-warning alert-dismissible" role="alert" id="helpAlert">
+                 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Сховати підказку</span></button>
+                 <strong>Важливо!</strong> Переміщатись до наступної/попередньої дати можна також і з допомогою клавіш управління курсора &quot;Вліво&quot; та &quot;Вправо&quot; відповідно
+               </div>
+
                <div class="map-container">
                   <div id="map"></div>
                   <div id="map-date" class="alert alert-success"></div>
