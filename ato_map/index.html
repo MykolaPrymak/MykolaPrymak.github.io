@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>ATO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <!--[if lt IE 7]>
+                <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <![endif]-->
+            <nav role="navigation" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/" class="navbar-brand">ATO Map</a>
+                </div>
+                <!-- Collection of nav links and other content for toggling -->
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Карта</a></li>
+                        <li><a href="http://rnbo.gov.ua">РНБО</a></li>
+                        <li><a href="http://www.radiosvoboda.org/media/photogallery/25456177.html">Радіо Свобода</a></li>
+                        <li><a href="http://www.rferl.org">www.rferl.org</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="//github.com/mykolaprymak/ato_map/">On github.com</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="content" class="container">
+               <div class="map-container">
+                  <div id="map"></div>
+                  <div id="map-date" class="alert alert-success"></div>
+               </div>
+
+               <nav role="navigation" class="nav-map">
+                  <span class="btn btn-danger pull-left" id="prev" title="Або натисніть клавішу вліво">Назад</span>
+                  <span class="btn btn-success pull-right" id="next" title="Або натисніть клавішу вправо">Вперед</span>
+               </nav>
+
+           </div>
+        </div>
+
+        <footer>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <p class="text-center text-muted">Map Source: <a href="http://www.rferl.org/">http://www.rferl.org/</a> | <a href="//mykolaprymak.gitgub.io/">mykolaprymak.gitgub.io</a> @ 2014</p>
+                </div>
+            </nav>
+        </footer>
+
+        <script data-main="js/main" src="vendor/requirejs/require.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
