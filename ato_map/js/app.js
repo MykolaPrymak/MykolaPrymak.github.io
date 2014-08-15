@@ -45,18 +45,27 @@ define(['jquery', 'map_data', 'storage'], function($, map_data, Storage) {
       this.showMap(map_data[this.mapCurrentIdx]);
     },
 
+    resetBtnClass: function() {
+      $('#prev').removeClass('disabled');
+      $('#next').removeClass('disabled');
+    },
+
     showNext: function() {
       this.mapCurrentIdx++;
-      if (this.mapCurrentIdx > this.mapMaxIdx) {
+      this.resetBtnClass();
+      if (this.mapCurrentIdx >= this.mapMaxIdx) {
         this.mapCurrentIdx = this.mapMaxIdx;
+        $('#next').addClass('disabled');
       }
       this.showMap(map_data[this.mapCurrentIdx]);
     },
 
     showPrev: function() {
       this.mapCurrentIdx--;
-      if (this.mapCurrentIdx < 0) {
+      this.resetBtnClass();
+      if (this.mapCurrentIdx <= 0) {
         this.mapCurrentIdx = 0;
+        $('#prev').addClass('disabled');
       }
       this.showMap(map_data[this.mapCurrentIdx]);
     },
