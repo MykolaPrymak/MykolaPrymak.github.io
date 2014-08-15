@@ -111,6 +111,9 @@ define(function() {
     },{
       date: '14.08.2014',
       map: 'http://gdb.rferl.org/422A4C30-C76C-4B78-B02A-710F8D996A2F_w974_n_s_s.jpg'
+    },{
+      date: '15.08.2014',
+      map: 'http://gdb.rferl.org/32E8AF75-4A3E-47E2-8E80-C51A2FFB935E_w974_n_s_s.jpg'
     }
   ];
   return map_data;
