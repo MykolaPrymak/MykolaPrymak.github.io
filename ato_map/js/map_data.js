@@ -117,6 +117,12 @@ define(function() {
     },{
       date: '16.08.2014',
       map: 'http://gdb.rferl.org/94A94681-E07E-408F-8227-B6B6E63C5772_w974_n_s_s.jpg'
+    },{
+      date: '17.08.2014',
+      map: 'http://gdb.rferl.org/CCA37DA1-ABA4-4EB6-870F-1A4029FEA704_w974_n_s_s.jpg'
+    },{
+      date: '18.08.2014',
+      map: 'http://gdb.rferl.org/FAE892C7-F53A-4E8A-A9B2-ECDD37A78F03_w974_n_s_s.png'
     }
   ];
   return map_data;
