@@ -123,6 +123,21 @@ define(function() {
     },{
       date: '18.08.2014',
       map: 'http://gdb.rferl.org/FAE892C7-F53A-4E8A-A9B2-ECDD37A78F03_w974_n_s_s.png'
+    },{
+      date: '19.08.2014',
+      map: 'http://gdb.rferl.org/F65DDC0D-83E4-47C1-AECF-1BDD4B6E02B9_w974_n_s_s.jpg'
+    },{
+      date: '20.08.2014',
+      map: 'http://gdb.rferl.org/0C28676B-3A8E-4E8D-84AF-EB9E60CA7968_w974_n_s_s.jpg'
+    },{
+      date: '21.08.2014',
+      map: 'http://gdb.rferl.org/E9A769FB-B10D-47A6-B8CD-0AD0E11E2A96_w974_n_s_s.jpg'
+    },{
+      date: '22.08.2014',
+      map: 'http://gdb.rferl.org/FED45171-4610-4397-B464-0950D468FD2D_w974_n_s_s.jpg'
+    },{
+      date: '23.08.2014',
+      map: 'http://gdb.rferl.org/5C8A3BB8-BD6D-48AD-9C01-E061815EBAD4_w974_n_s_s.jpg'
     }
   ];
   return map_data;
