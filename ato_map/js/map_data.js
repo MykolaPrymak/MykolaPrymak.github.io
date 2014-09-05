@@ -138,6 +138,45 @@ define(function() {
     },{
       date: '23.08.2014',
       map: 'http://gdb.rferl.org/5C8A3BB8-BD6D-48AD-9C01-E061815EBAD4_w974_n_s_s.jpg'
+    },{
+      date: '24.08.2014',
+      map: 'http://gdb.rferl.org/888DA0D2-2E72-41C5-9013-FBE0429AB0FE_w974_n_s_s.png'
+    },{
+      date: '25.08.2014',
+      map: 'http://gdb.rferl.org/17D3AD3A-3197-4626-8675-CFBAB6A6C602_w974_n_s_s.jpg'
+    },{
+      date: '26.08.2014',
+      map: 'http://gdb.rferl.org/50CF05F0-0F73-4766-AD18-A4C80E7F4458_w974_n_s_s.jpg'
+    },{
+      date: '27.08.2014',
+      map: 'http://gdb.rferl.org/AC16FB87-28B8-417E-A66F-E79172EA84F0_w974_n_s_s.jpg'
+    },{
+      date: '28.08.2014',
+      map: 'http://gdb.rferl.org/4B2D494B-E470-4B5B-9102-7A96EB07BECB_w974_n_s_s.jpg'
+    },{
+      date: '29.08.2014',
+      map: 'http://gdb.rferl.org/CB1A9BD7-2AC6-4627-9868-A6E9AF16A70E_w974_n_s_s.jpg'
+    },{
+      date: '30.08.2014',
+      map: 'http://gdb.rferl.org/613A17B3-380E-4C81-9848-0D47D4FB33B2_w974_n_s_s.jpg'
+    },{
+      date: '31.08.2014',
+      map: 'http://gdb.rferl.org/CFDF2511-953E-4051-8545-92252CDEC069_w974_n_s_s.jpg'
+    },{
+      date: '01.09.2014',
+      map: 'http://gdb.rferl.org/A8A060DE-0801-436C-880E-686FB7911D87_w974_n_s_s.jpg'
+    },{
+      date: '02.09.2014',
+      map: 'http://gdb.rferl.org/3F4D3B07-617A-454A-9636-819BDD023599_w974_n_s_s.jpg'
+    },{
+      date: '03.09.2014',
+      map: 'http://gdb.rferl.org/D6D0E8CD-53EF-4398-B51E-2DF6D08E5241_w974_n_s_s.jpg'
+    },{
+      date: '04.09.2014',
+      map: 'http://gdb.rferl.org/B8BBF4F2-06DB-4D4C-A33C-D6B48174F042_w974_n_s_s.jpg'
+    },{
+      date: '05.09.2014',
+      map: 'http://gdb.rferl.org/C8CFB607-4157-4C8E-9EB2-5F9A053E649D_w974_n_s_s.jpg'
     }
   ];
   return map_data;
